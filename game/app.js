@@ -12,15 +12,14 @@ function atom() {
 }
 
 window.setInterval(function() {
-    let res = {    
-        ["points"]: game.points
-    }
+    let res = game
 
-    for (i = 0; res.length; i++) {
-        let elements = document.querySelectorAll(".res." + Object.keys(res)[i])
-        elements.forEach(function (element) {
-            element.innerHTML = res[i]
-        })
+    for () {
+        console.log(elements)
+
+        for (let i = 0; i < $(Object.keys(res), 2).length; i++) {
+            $(Object.keys(res), 2)[i].innerHTML
+        }
     }
 
     game.atomBoost = game.atoms / 100
