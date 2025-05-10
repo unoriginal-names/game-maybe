@@ -8,11 +8,10 @@ window.setInterval(function() {
     let res = {    
         ["points"]: game.points
     }
-    for (i = 0; res.length; i++ ) {
-        for (let j = 0; j < $(Object.keys(res)[j], 2).length; j++) {
-            $(Object.keys)
-        }
+    for (i = 0; res.length; i++) {
+        let elements = document.querySelectorAll(".res." + Object.keys(res)[i])
+        elements.forEach(function (element) {
+            element.innerHTML = res[i]
+        })
     }
 }, 100)
-
-$("p", 4)

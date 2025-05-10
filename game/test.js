@@ -9,25 +9,21 @@ delta.getDeltaTime = function(prevTime) {
 }
 
 
-function $(query, type, doc) {
-    let typ
+function $(query, type) {
+    let func
 
     switch (type) {
         case 1:
-            typ = "GetElementById"
+            func = "GetElementById"
         case 2:
-            typ = "GetElementByClassName"
+            func = "GetElementByClassName"
         case 3:
-            typ = "GetElementByName"
+            func = "GetElementByName"
         case 4:
-            typ = "GetElementByTagName"
+            func = "GetElementByTagName"
         default:
-            typ = "GetElementById"
+            func = "GetElementById"
     }
 
-    if (typeof doc[typ] === "function") {
-        return doc[typ](query)
-    } else {
-        return document[typ](query)
-    }
+    return document[func](query)
 }
