@@ -14,16 +14,14 @@ function $(query, type) {
 
     switch (type) {
         case 1:
-            func = "GetElementById"
+            return document.GetElementById(query)
         case 2:
-            func = "GetElementByClassName"
+            return document.GetElementByClassName(query)
         case 3:
-            func = "GetElementByName"
+            return document.GetElementByName(query)
         case 4:
-            func = "GetElementByTagName"
+            return document.GetElementByTagName(query)
         default:
-            func = "GetElementById"
+            return document.GetElementById(query)
     }
-
-    return document[func](query)
 }
