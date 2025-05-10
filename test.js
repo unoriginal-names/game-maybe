@@ -11,14 +11,14 @@ delta.getDeltaTime = function(prevTime) {
 function $(query, type) {
     switch (type) {
         case 1:
-            return document.GetElementById(query)
+            return document.getElementById(query)
         case 2:
-            return document.GetElementsByClassName(query)
+            return document.getElementsByClassName(query)
         case 3:
             return document.getElementsByName(query)
         case 4:
-            return document.GetElementsByTagName(query)
+            return document.getElementsByTagName(query)
         default:
-            return document.GetElementById(query)
+            return document.getElementById(query)
     }
 }
