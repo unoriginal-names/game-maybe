@@ -14,7 +14,7 @@ function atom() {
 window.setInterval(function() {
     let res = game
 
-    console.log($(Object.keys(res), 2))
+    console.log(Object.keys(res))
 
     for (let i = 0; i < $(Object.keys(res), 2).length; i++) {
         $(Object.keys(res), 2)[i].innerHTML
