@@ -14,19 +14,15 @@ function atom() {
 window.setInterval(function() {
     let res = game
 
-    console.log(elements)
-
     for (let i = 0; i < $(Object.keys(res), 2).length; i++) {
         $(Object.keys(res), 2)[i].innerHTML
     }
 
-    game.atomBoost = game.atoms / 100
+    game.atomBoost = 1 + game.atoms / 100
     game.pointTimer += delta.time
 
     if (game.pointTimer >= game.pointInterval) {
         game.points += (1 * game.atomBoost)
-        game.pointTimer -= game.pointInterval
+    game.pointTimer -= game.pointInterval
     }
 }, 100)
-
-//hi
