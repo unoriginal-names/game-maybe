@@ -8,17 +8,26 @@ delta.getDeltaTime = function(prevTime) {
     return date.getTime() - prevTime
 }
 
-function $(query, type) {
+
+function $(query, type, doc) {
+    let typ
+
     switch (type) {
         case 1:
-            return document.getElementById(query)
+            typ = "GetElementById"
         case 2:
-            return document.getElementsByClassName(query)
+            typ = "GetElementByClassName"
         case 3:
-            return document.getElementsByName(query)
+            typ = "GetElementByName"
         case 4:
-            return document.getElementsByTagName(query)
+            typ = "GetElementByTagName"
         default:
-            return document.getElementById(query)
+            typ = "GetElementById"
+    }
+
+    if (typeof doc[typ] === "function") {
+        return doc[typ](query)
+    } else {
+        return document[typ](query)
     }
 }
