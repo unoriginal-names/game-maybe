@@ -28,3 +28,5 @@ window.setInterval(function() {
         game.pointTimer -= game.pointInterval
     }
 }, 100)
+
+//hi
