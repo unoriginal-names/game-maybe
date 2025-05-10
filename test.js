@@ -13,11 +13,11 @@ function $(query, type) {
         case 1:
             return document.GetElementById(query)
         case 2:
-            return document.GetElementByClassName(query)
+            return document.GetElementsByClassName(query)
         case 3:
-            return document.GetElementByName(query)
+            return document.getElementsByName(query)
         case 4:
-            return document.GetElementByTagName(query)
+            return document.GetElementsByTagName(query)
         default:
             return document.GetElementById(query)
     }
