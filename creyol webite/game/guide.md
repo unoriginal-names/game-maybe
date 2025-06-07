@@ -4,7 +4,7 @@
     here is your guide on part one to the game (be sure to leave a like and subscribe)
 
 ### points
-    you get points every 3 seconds
+    you get points every 5 seconds
     the amount can be boosted by atoms if you have any
 
 ### scientifically inaccurate atoms
@@ -12,7 +12,7 @@
     atoms increase point gain by +1% (whatever that means)
     they cap out at 50 though maybe try doing something to fix that
 
-### reset theory
+### fake hard resets
     atom resets are pretty much just resets that increase the atom limit
     they also increase the atom boost by +1% (again)
     you need max atoms to do it though
